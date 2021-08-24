@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th8 24, 2021 lúc 05:33 PM
+-- Thời gian đã tạo: Th8 24, 2021 lúc 06:51 PM
 -- Phiên bản máy phục vụ: 10.4.18-MariaDB
 -- Phiên bản PHP: 7.4.16
 
@@ -40,7 +40,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`, `name`, `status`) VALUES
-(1, 'admin', '123456', 'Admin', 0);
+(1, 'admin', '123456', 'Admin', 1),
+(5, 'nhanvien', '123456', 'Nguyễn Văn B', 0);
 
 -- --------------------------------------------------------
 
@@ -100,7 +101,7 @@ ALTER TABLE `tichdiem`
 -- AUTO_INCREMENT cho bảng `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT cho bảng `khachhang`
